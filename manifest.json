@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "Better Look Up",
+  "homepage_url": "https://github.com/D3vmotiv/better-look-up",
+	"version": "1.0",
+	
+  "description": "Set shortcuts for better searching buttons, inputs or another clickable elements.",
+  "icons": {
+    "48": "icons/48.png",
+    "96": "icons/96.png"
+  },
+
+  "content_scripts": [
+    {
+        "matches": ["<all_urls>"],
+        "js": ["content-scripts/app.js"]
+    }
+	]
+
+}
